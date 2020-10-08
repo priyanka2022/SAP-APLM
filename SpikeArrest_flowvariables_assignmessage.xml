@@ -1,0 +1,13 @@
+<!-- This policy can be used to create or modify the standard HTTP request and response messages -->
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+ 
+	<!-- Sets a new value to the existing parameter -->
+	<Set>
+		<Payload contentType="application/json" variablePrefix="@" variableSuffix="#">
+		    {
+		       Spike Triggered?: "@ratelimit.spikeArrest.failed#" }
+		 </Payload>
+	</Set>
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<AssignTo createNew="false" type="response">response</AssignTo>
+</AssignMessage>
