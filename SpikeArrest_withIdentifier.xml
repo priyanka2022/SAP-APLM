@@ -1,0 +1,7 @@
+<!-- This policy throttles the number of requests processed by an API Proxy protecting against performance lags and downtime -->
+<SpikeArrest async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+	<!-- can be used to uniquely identify an application or a client -->
+	<Identifier ref="request.header.client"></Identifier>
+	<Rate>2pm</Rate>
+	<UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>
