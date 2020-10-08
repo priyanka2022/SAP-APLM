@@ -2,6 +2,6 @@
 <SpikeArrest async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
 	<!-- can be used to uniquely identify an application or a client -->
 	<Identifier ref="request.header.client"></Identifier>
-	<Rate>2pm</Rate>
+	<Rate>1pm</Rate>
 	<UseEffectiveCount>true</UseEffectiveCount>
 </SpikeArrest>
