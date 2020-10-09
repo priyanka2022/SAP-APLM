@@ -1,0 +1,8 @@
+<!--This policy can be used to selectively whitelist or blacklist an IP or group of IPs. Enter the Source IP address in SourceAddress property -->
+<AccessControl async='true' continueOnError='false' enabled='true' xmlns='http://www.sap.com/apimgmt'>
+  <IPRules noRuleMatchAction='ALLOW'>
+    <MatchRule action='DENY'>
+      <SourceAddress mask='32'>156.167.257.150</SourceAddress>
+    </MatchRule>
+  </IPRules>
+</AccessControl>
