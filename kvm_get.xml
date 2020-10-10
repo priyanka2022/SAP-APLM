@@ -1,0 +1,12 @@
+
+<!-- Key/value pairs can be stored, retrieved, and deleted from named existing maps by configuring this policy by specifying PUT, GET, or DELETE operations -->
+<!-- mapIdentifier refers to the name of the key value map -->
+<KeyValueMapOperations mapIdentifier="kvm_store_1" async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+	<Get assignTo="request.queryparam.myname">
+    <Key>
+      <Parameter>my-name</Parameter>
+    </Key>
+  </Get>
+	<!-- the scope of the key value map. Valid values are environment, organization, apiproxy and policy -->
+ <Scope>environment</Scope>
+</KeyValueMapOperations>
