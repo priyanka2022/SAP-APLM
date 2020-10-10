@@ -1,0 +1,8 @@
+<JSONThreatProtection async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+                <ArrayElementCount>-1</ArrayElementCount>
+                <ContainerDepth>-1</ContainerDepth>
+                <ObjectEntryCount>5</ObjectEntryCount>
+                <ObjectEntryNameLength>-1</ObjectEntryNameLength>
+                <Source>request</Source>
+                <StringValueLength>-1</StringValueLength>
+</JSONThreatProtection>
