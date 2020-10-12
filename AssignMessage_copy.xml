@@ -1,0 +1,12 @@
+<!-- This policy can be used to create or modify the standard HTTP request and response messages -->
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+ 
+	<!-- Sets a new value to the existing parameter -->
+	<Copy source="request">   
+		<QueryParams>      
+			<QueryParam name="q"></QueryParam>   
+		</QueryParams>   
+	</Copy>
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<AssignTo createNew="true" type="request">googleBookReq</AssignTo>
+</AssignMessage>
