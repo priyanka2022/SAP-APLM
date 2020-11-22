@@ -1,0 +1,13 @@
+<!-- This policy can be used to create or modify the standard HTTP request and response messages -->
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+ 
+	<!-- Sets a new value to the existing parameter -->
+	<Set>
+	    <QueryParams>      
+			<QueryParam name="page">{request.formparam.id}</QueryParam>   
+          </QueryParams>
+          <Verb>GET</Verb>
+	</Set>
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<AssignTo createNew="true" type="request">SampleRequest</AssignTo>
+</AssignMessage>
