@@ -1,0 +1,23 @@
+<!-- This policy can be used to create or modify the standard HTTP request and response messages -->
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+ 
+	<!-- Sets a new value to the existing parameter -->
+	<Set>
+	    <Headers>
+	        <Header name= "Content-Type">text/xml; charset=utf-8</Header>
+	        <Header name = "SOAPAction">http://tempuri.org/Add</Header>
+	    </Headers>
+		<Payload contentType="text/xml">
+            <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                <soap:Body>
+                    <Add xmlns="http://tempuri.org/">
+                    <intA>{request.queryparam.Input1}</intA>
+                    <intB>{request.queryparam.Input2}</intB>
+                    </Add>
+                </soap:Body>
+            </soap:Envelope>
+	    </Payload>
+	</Set>
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<AssignTo createNew="true" type="request">request</AssignTo>
+</AssignMessage>
