@@ -1,0 +1,7 @@
+<XSL async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+                <!-- A variable that stores the output of the transformation -->
+                <!-- The XSLT file to be used for transforming the message. -->
+                <ResourceURL>xsl://xsltTransform.xsl</ResourceURL>
+                <!-- Contains the message from which information needs to be extracted -->
+                <Source>response</Source>
+</XSL>
