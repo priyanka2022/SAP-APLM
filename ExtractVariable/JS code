@@ -1,0 +1,2 @@
+print(context.getVariable("preference.firstCity"));
+print(context.getVariable("preference.secondCity"));
