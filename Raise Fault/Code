@@ -1,0 +1,14 @@
+<!-- can be used to create custom messages in case of an error condition -->
+<RaiseFault async="true" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+	<!-- Defines the response message returned to the requesting client -->
+	<FaultResponse>
+		<Set>
+			<!-- Sets or overwrites HTTP headers in the respone message -->
+			<Headers/>
+			<Payload contentType="text/plain">More than 3 Query Params not allowed </Payload> <StatusCode>500</StatusCode>
+			<!-- sets the reason phrase of the response -->
+			<ReasonPhrase>Server Error</ReasonPhrase>
+		</Set>
+	</FaultResponse>
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
