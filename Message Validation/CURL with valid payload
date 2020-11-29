@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-type: application/xml' https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com:443/4ff6b5aatrial/amsg/v1 -d '<note><to>Fred Rogers</to><from>Nick Danger</from><heading>Greetings from my neighborhood</heading><body>Just writing to say hello.</body></note>'
