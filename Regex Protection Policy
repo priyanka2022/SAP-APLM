@@ -1,0 +1,7 @@
+<RegularExpressionProtection async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<QueryParam name="name">
+		<Pattern>[\s]*((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+	</QueryParam>
+	<Source>request</Source>
+</RegularExpressionProtection>
