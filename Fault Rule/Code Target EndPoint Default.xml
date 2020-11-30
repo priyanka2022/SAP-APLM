@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndPoint>
+    <name>default</name>
+    <url>http://httpbin.org</url>
+    <provider_id>NONE</provider_id>
+    <isDefault>true</isDefault>
+    <properties/>
+    <faultRules>
+        <faultRule>
+            <name>ServerError</name>
+            <condition>(response.status.code = 400)</condition>
+            <steps>
+                <step>
+                    <policy_name>Error400</policy_name>
+                    <sequence>1</sequence>
+                </step>
+            </steps>
+        </faultRule>
+    </faultRules>
+    <preFlow>
+        <name>PreFlow</name>
+    </preFlow>
+    <postFlow>
+        <name>PostFlow</name>
+    </postFlow>
+    <conditionalFlows/>
+</TargetEndPoint>
