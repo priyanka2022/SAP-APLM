@@ -1,0 +1,3 @@
+curl -X GET https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com:443/4ff6b5aatrial/kvm/v1/employees
+
+curl -X POST https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com:443/4ff6b5aatrial/kvm/v1/employees -d '{"hello":"Kitty"}'
