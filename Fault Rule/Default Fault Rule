@@ -1,0 +1,32 @@
+<faultRules>
+        <faultRule>
+            <name>f1</name>
+            <condition>(response.status.code == 400)</condition>
+            <steps>
+                <step>
+                    <policy_name>JS1</policy_name>
+                    <sequence>1</sequence>
+                </step>
+            </steps>
+        </faultRule>
+        <faultRule>
+            <name>f2</name>
+             <condition>(response.status.code == 401)</condition>
+            <steps>
+                <step>
+                    <policy_name>JS2</policy_name>
+                    <sequence>1</sequence>
+                </step>
+            </steps>
+        </faultRule>
+    </faultRules>
+     <defaultFaultRule>
+	<name>defaultfaultRule</name>
+	<alwaysEnforce>false</alwaysEnforce>
+	<steps>
+	    <step>
+		<policy_name>JS3</policy_name>
+		<sequence>1</sequence>
+	   </step>
+	</steps>
+     </defaultFaultRule>
