@@ -1,0 +1,3 @@
+proxy.pathsuffix MatchesPath "/employees" and request.verb = "GET"
+
+proxy.pathsuffix MatchesPath "/employees" and request.verb = "POST"
