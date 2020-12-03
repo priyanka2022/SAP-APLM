@@ -1,0 +1,1 @@
+curl -H 'Accept: application/json' -H "Authorization: Bearer RtP1DjF8HE3D9ooK8xJN4qAReC5H" https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com/4ff6b5aatrial/kvm/v1
