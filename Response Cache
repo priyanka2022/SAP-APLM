@@ -1,6 +1,8 @@
 <ResponseCache async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
 	<CacheKey>
 		<KeyFragment ref="request.uri"></KeyFragment>
+		<KeyFragment ref="request.header.partnerid"></KeyFragment>
+		<KeyFragment ref="request.header.name"></KeyFragment>
 	</CacheKey>
 	<ExpirySettings>
 		<TimeoutInSec ref="">3600</TimeoutInSec>
@@ -8,3 +10,5 @@
 	<SkipCacheLookup>request.header.InvalidateCache="true"</SkipCacheLookup>
 	<SkipCachePopulation></SkipCachePopulation>
 </ResponseCache>
+
+// responsecache.cachekey:4ff6b5aatrial__trial__BookAPI_v1__default__/4ff6b5aatrial/v1/books/get__100__Priyanka
