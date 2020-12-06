@@ -1,0 +1,5 @@
+<!-- Decode JWT TOken -->
+<DecodeJWT async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+</DecodeJWT>
+
+// By default, it searches for Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJqZWN0LXN1YmplY3QiLCJhdWQiOlsiYXVkaWVuY2UxIiwiYXVkaWVuY2UyIl0sImlzcyI6InVybjpcL1wvc2FwLUpXVC1wb2xpY3ktdGVzdCIsImV4cCI6MTYwNzI2OTk1NywidXNlcklkIjoiUHJpeWFua2EiLCJpYXQiOjE2MDcyNjYzNTcsImp0aSI6IjhhYWJmOTQwLWUzMzctNDZmZS05YTFkLTcyNTM3ZDY0OGNhMCJ9.GewYHfOLSb22tZ8-5hSha18IyO7WG8TjszbNGSxHtV4 
