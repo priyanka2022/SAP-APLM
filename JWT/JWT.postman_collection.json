@@ -40,6 +40,50 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "JWT Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jwt",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJqZWN0LXN1YmplY3QiLCJhdWQiOlsiYXVkaWVuY2UxIiwiYXVkaWVuY2UyIl0sImlzcyI6InVybjpcL1wvc2FwLUpXVC1wb2xpY3ktdGVzdCIsImV4cCI6MTYwNzI2OTk1NywidXNlcklkIjoiUHJpeWFua2EiLCJpYXQiOjE2MDcyNjYzNTcsImp0aSI6IjhhYWJmOTQwLWUzMzctNDZmZS05YTFkLTcyNTM3ZDY0OGNhMCJ9.GewYHfOLSb22tZ8-5hSha18IyO7WG8TjszbNGSxHtV4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com/4ff6b5aatrial/v1/books?q=JAVA",
+					"protocol": "https",
+					"host": [
+						"4ff6b5aatrial-trial",
+						"integrationsuitetrial-apim",
+						"eu10",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"4ff6b5aatrial",
+						"v1",
+						"books"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "JAVA"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
