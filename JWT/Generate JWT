@@ -1,0 +1,17 @@
+<!-- Generate JWT TOken -->
+<GenerateJWT async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+<Algorithm>HS256</Algorithm>
+<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+<SecretKey>
+		<Value ref="private.key"/>
+</SecretKey>
+<ExpiresIn>1h</ExpiresIn>
+<Subject>subject-subject</Subject>
+<Issuer>urn://sap-JWT-policy-test</Issuer>
+<Audience>audience1,audience2</Audience>
+<Id/>
+<AdditionalClaims>
+		<Claim name="userId" type="string" ref ="request.formparam.username"/>
+</AdditionalClaims>
+<OutputVariable>jwt-variable</OutputVariable>
+</GenerateJWT>
