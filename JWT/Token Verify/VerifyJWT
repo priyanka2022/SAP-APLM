@@ -1,0 +1,11 @@
+<!-- Verify JWT TOken -->
+<VerifyJWT async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+<Algorithm>HS256</Algorithm>
+<Source>request.formparam.jwt</Source>
+<SecretKey>
+		<Value ref="private.key"/>
+</SecretKey>
+<Subject>subject-subject</Subject>
+<Issuer>urn://sap-JWT-policy-test</Issuer>
+<Audience>audience1,audience2</Audience>
+</VerifyJWT>
