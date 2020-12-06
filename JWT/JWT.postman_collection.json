@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "24897feb-99e2-4710-831b-fbac100bf899",
+		"name": "JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token Generation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Priyanka",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com:443/4ff6b5aatrial/v1/jwt",
+					"protocol": "https",
+					"host": [
+						"4ff6b5aatrial-trial",
+						"integrationsuitetrial-apim",
+						"eu10",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"4ff6b5aatrial",
+						"v1",
+						"jwt"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
