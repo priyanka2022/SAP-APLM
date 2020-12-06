@@ -1,0 +1,4 @@
+<OAuthV2 async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+   <Operation>VerifyAccessToken</Operation>
+   <Scope>READ WRITE</Scope>
+</OAuthV2>
