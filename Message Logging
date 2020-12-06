@@ -1,0 +1,11 @@
+<MessageLogging async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+	<Syslog>
+		<Message>response.content</Message>
+    	<!-- Host must be valid DNS/IP -->
+    	<!-- <Host>127.0.0.1</Host> -->
+		<Host></Host>
+    	<!-- This is default port value -->
+	    <Port>514</Port>
+	    <Protocol>TCP</Protocol>
+	</Syslog>
+</MessageLogging>
