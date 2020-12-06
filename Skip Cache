@@ -1,0 +1,12 @@
+<ResponseCache async="false" continueOnError="false" enabled="true" xmlns="http://www.sap.com/apimgmt">
+	<CacheKey>
+		<KeyFragment ref="request.uri"></KeyFragment>
+		<KeyFragment ref="request.header.partnerid"></KeyFragment>
+		<KeyFragment ref="request.header.name"></KeyFragment>
+	</CacheKey>
+	<ExpirySettings>
+		<TimeOfDay>13:46:00</TimeOfDay>
+	</ExpirySettings>
+	<SkipCacheLookup>request.header.InvalidateCache="true"</SkipCacheLookup>
+	<SkipCachePopulation>(request.queryparam.q == "nodejs"</SkipCachePopulation>
+</ResponseCache>
