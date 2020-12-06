@@ -1,0 +1,1 @@
+curl -i -X POST -H 'Content-Type:x-www-form-urlencoded' -d "username=priyanka" https://4ff6b5aatrial-trial.integrationsuitetrial-apim.eu10.hana.ondemand.com:443/4ff6b5aatrial/v1/jwt 
